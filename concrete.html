@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YPNRNEPLK"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3YPNRNEPLK');
+    </script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Buermann's Outdoor Services - Concrete Contracting</title>
+    <meta name="description" content="Central Minnesota concrete contractor. Removals, new concrete, stamped, colored, and much more. Give us a call, today!">
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class=" w-full h-16 bg-slate-100 rounded-xl">
+      <div class="flex h-full items-center mx-8">
+        <div class="flex-1">
+          <a class="font-semibold text-2xl">Concrete Services</a>
+        </div>
+        <div class="dropdown dropdown-end">
+          <label tabindex="0">
+            <div>
+              <i class="text-lg transition rounded-xl hover:ring-2 focus:ring-2 ring-offset-4 ring-slate-400 text-white bg-yellow-500 px-2.5 py-2 bi bi-list"></i>
+            </div>
+          </label>
+          <ul tabindex="0" class="mt-3 z-[1] p-3 shadow menu menu-sm dropdown-content bg-slate-100 rounded-box w-52">
+            <li><a class="font-medium text-yellow-500" href="./concrete.html" aria-current="page">Concrete</a></li>
+            <li><a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="./iceDam2.html">Ice Dams</a></li>
+            <li><a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <main class="px-4 md:px-15 lg:px-30 my-8">
+      <div class="lg:grid lg:grid-cols-2 gap-6 md:gap-12">
+        <div class="lg:col-span-full flex justify-center my-4">
+          <img src="./img/bos.jpg" class="object-cover w-4/5 lg:w-1/2">
+        </div>
+        <div class="col-span-full p-8 bg-slate-100 rounded-xl text-center">
+          <h3 class="text-xl font-medium">Central Minnesota</h3>
+          <h2 class="text-5xl text-yellow-500 mb-4 font-semibold">Concrete Contractor</h2>
+          <p class="md:hidden text-lg leading-8 mt-8">We started our company in 2020 with over a decade of experience and one thing in mind, concrete for greater Central Minnesota.</p>
+          <p class="hidden md:block text-lg leading-8 mt-4">Concrete was where we started, and it is what grew our team, initially. But for several years, we have been servicing homes year round for two other problems; Ice dams, and mosquitos. Although these are two classic Minnesota dilemmas, we service far outside our home state as well.</p>
+          <div class="col-span-1 lg:col-span-5 my-4 flex justify-center">
+            <button href="tel:3204239504" class="text-2xl transition rounded-xl skew-y-6 hover:skew-y-0 hover:-translate-y-1 hover:ring-2 ring-offset-4 ring-slate-400 text-white lg:text-3xl bg-yellow-500 shadow-lg px-3 py-2.5 m-6"><i class="bi bi-telephone-fill"></i></button>
+            <button onclick="modalGallery.showModal()" class="text-2xl transition rounded-xl hover:-translate-y-1 hover:ring-2 ring-offset-4 ring-slate-400 translate-y-1 text-white lg:text-3xl bg-yellow-500 shadow-lg px-3 py-2.5 m-6"><i class="bi bi-images"></i></button>
+            <button onclick="modalEmail.showModal()" class="text-2xl transition rounded-xl -skew-y-6 hover:skew-y-0 hover:-translate-y-1 hover:ring-2 ring-offset-4 ring-slate-400 text-white lg:text-3xl bg-yellow-500 shadow-lg px-3 py-2.5 m-6"><i class="bi bi-envelope-open-fill"></i></button>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-1 border-1 p-4 my-8 shadow-lg rounded-xl">
+          <div class="mx-4 flex justify-between">
+            <h2 class="inline font-medium text-2xl mb-3">Our Work</h2><a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-xl border border-transparent font-semibold bg-yellow-500 text-white hover:ring-2 ring-offset-4 ring-slate-400 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800 cursor-pointer" onclick="modalGallery.showModal()">
+              <i class="bi bi-images"></i>
+              Gallery
+            </a>
+          </div>
+          <!-- Carousel -->
+          <div class="carousel mt-4 w-full max-h-96">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./img/driveway4before.jpg" class="max-w-full h-auto mx-auto object-contain" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./img/driveway4after.jpg" class="max-w-full h-auto mx-auto object-contain" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./img/plankfinish.jpg" class="max-w-full h-auto mx-auto object-contain" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>  
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./img/driveway1.jpg" class="max-w-full h-auto mx-auto object-contain" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide5" class="carousel-item relative w-full">
+              <img src="./img/driveway5after.jpg" class="max-w-full h-auto mx-auto object-contain" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide6" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide6" class="carousel-item relative w-full">
+              <img src="./img/shedPad.jpg" class="max-w-full h-auto mx-auto object-contain" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide5" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 p-8 rounded-xl shadow-lg my-8">
+          <h2 class="text-2xl font-medium mb-6">About Us</h2>
+          <img class="float-left rounded-xl m-2 md:mr-6 md:mt-0 w-[90%] md:w-60" src="./img/aboutImage.jpg">
+          <h5 class="text-xl font-semibold">Family Owned & Operated Since 2020</h5>
+          <p class="mt-2 mb-4 text-lg">Tyler & Casey Buermann</p>
+          <p class="">We started out as a two-person operation, with nearly a decade of experience, and the desire to work for ourselves with a core of family values. With hard work and the lord's blessing, the work demand quickly outran the two of us. Sticking to our family values we began employing experienced family and friends, growing our business into what it is today.</p>
+          <p>Now just a few short years from when we started, we have grown our staff to accomodate your concrete needs! So if you or someone you know are looking for concrete services, feel free to give us a call or email. We would love to help!</p>
+        </div>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 align-items-start justify-items-center gap-8">
+        <div class="flex flex-col w-[95%] bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+          <img class="w-full h-60 rounded-t-xl" src="./img/concrete.jpg" alt="Concrete Contracting">
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+              Concrete Pouring
+            </h3>
+            <p class=" mt-1 text-gray-800 dark:text-gray-400">
+              Our exterior pouring experience is vast! Any outdoor job big or small, we have you covered.
+            </p>
+            <hr class="my-4">
+            <div class="flex">
+              <div class="w-3/4 mr-4">
+                <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+                  <div class="tooltip" data-tip="Driveways, walkways, sidewalks, patios, garage floors, and much more!">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Driveways, Walkways & Patios
+                    </li>
+                  </div>
+                  <div class="tooltip" data-tip="Need concrete flooring in a garage or shop?">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Garage Flooring
+                    </li>
+                  </div>
+                  <div class="tooltip" data-tip="Stairs, ramps, drain tile, and much more.">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Stairs & Ramps
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-[95%] bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+          <img class="w-full h-60 rounded-t-xl" src="./img/removal.jpg" alt="Concrete Removal">
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+              Removals
+            </h3>
+            <p class="mt-1 text-gray-800 dark:text-gray-400">
+              Out with the old, in with the new. Make some space for your dreams to become a reality.
+            </p>
+            <hr class="my-4">
+            <div class="flex">
+              <div class="w-3/4 mr-4">
+                <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+                  <div class="tooltip" data-tip="Any removal outside, we can handle!">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Exterior Removals
+                    </li>
+                  </div>
+                  <div class="tooltip" data-tip="Our removal methods are many, but using a jack hammer is one of the best to remove old projects.">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Hammering
+                    </li>
+                  </div>
+                  <div class="tooltip" data-tip="Joint cutting or otherwise, let us know how we can help.">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Saw Cutting
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-[95%] bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+          <img class="w-full h-60 rounded-t-xl" src="./img/plankfinish.jpg" alt="Image Description">
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+              Decorative Concrete
+            </h3>
+            <p class="mt-1 text-gray-800 dark:text-gray-400">
+              We offer many decorative finishing options; Exposed, wood plank, stamped, and more.
+            </p>
+            <hr class="my-4">
+            <div class="flex">
+              <div class="w-3/4 mr-4">
+                <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+                  <div class="tooltip" data-tip="If you're looking for a specialized finish to your concrete, from wooden plank finish to coloring, we have many options.">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Stamped / Colored
+                    </li>
+                  </div>
+                  <div class="tooltip" data-tip="Looking for an exposed aggregate or other unique finish? Give us a call to find out more!">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Exposed
+                    </li>
+                  </div>
+                  <div class="tooltip" data-tip="Drain tile and other water management options available.">
+                    <li class="text-start gap-x-2 py-3 text-md underline underline-offset-8 decoration-dashed decoration-1 text-gray-800 dark:text-white">
+                      Drain Tile
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Cards-->
+      <div class="grid grid-cols-1 gap-y-6 md:gap-12 md:grid-cols-2 my-12">
+        <h1 class="col-span-2 text-4xl text-center font-semibold">Contact Us</h1>
+        <div class="col-span-full md:col-span-1 w-full flex flex-col p-8 rounded-xl shadow-lg">
+          <h1 class="text-3xl font-medium text-start mb-4">Contact</h1>
+          <div class="ml-4 mb-6 overflow-auto">
+            <h3 class="text-lg">Email: <a class="hover:text-yellow-500" href="mailto:tyler@buermannsoutdoorservices.com">tyler@buermannsoutdoorservices.com</a></h3>
+            <h3 class="text-lg">Phone: <a class="hover:text-yellow-500" href="tel:+13204239504">(320)423-9504</a></h3>
+            <h3 class="text-lg">Message us on <a class="hover:text-yellow-500" href="https://m.me/BuermannsOutdoorServices" target="_blank">Facebook <i class="text-blue-500 bi bi-messenger"></i></a></h3>
+          </div>
+          <h1 class="text-3xl font-medium text-start my-4">Hours</h1>
+          <div class="text-start ml-4">
+            <p class="text-lg">
+              Monday: 8am - 7pm<br />
+              Tuesday: 8am - 7pm<br />
+              Wednesday: 8am - 7pm<br />
+              Thursday: 8am - 7pm<br />
+              Friday: 8am - 7pm<br />
+              Saturday: 8am - 7pm<br />
+              Sunday: CLOSED<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-1 w-full p-8 rounded-xl shadow-lg">
+          <h3 class="text-center text-3xl font-medium">Email Us</h3>
+          <form action="./send-email.php" method="post">
+            <div class="my-4 flex flex-col flex-wrap">
+              <div class="w-full my-2 flex items-center">
+                <label for="fullName" class="text-lg mr-4 w-1/3">Full Name</label>
+                <input type="text" name="fullName" placeholder="John Doe" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+              </div>
+              <div class="w-full my-2 flex items-center">
+                <label for="email" class="text-lg mr-4 w-1/3">Email</label>
+                <input type="email" name="email" placeholder="abc123@gmail.com" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+              </div>
+              <div class="w-full my-2 flex items-center">
+                <label for="phone" class="text-lg mr-4 w-1/3">Phone Number</label>
+                <input type="tel" name="phone" placeholder="(651)488-8888" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+              </div>
+              <div class="w-full my-2 flex items-center">
+                <label for="subject" class="text-lg mr-4 w-1/3">Zip Code</label>
+                <input type="text" name="zip" placeholder="#####" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+              </div>
+              <div class="w-full my-2 flex items-center">
+                <label for="subject" class="text-lg mr-4 w-1/3">Subject</label>
+                <input type="text" name="subject" placeholder="Subject" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+              </div>
+              <div class="w-full my-2 flex items-center">
+                <label for="message" class="text-lg mr-4 w-1/3">Message</label>
+                <textarea type="text" name="message" placeholder="Type here" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+                </textarea>
+              </div>
+              <div class="text-center mt-8">
+                <button type="submit" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                    Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Modals -->
+    <dialog id="modalEmail" class="modal">
+      <div class="modal-box w-3/4">
+        <h3 class="text-center text-3xl font-medium">Email Us</h3>
+        <form action="./send-email.php" method="post">
+          <div class="my-4 flex flex-col flex-wrap">
+            <div class="w-full my-2 flex items-center">
+              <label for="fullName" class="mr-4 w-1/3">Full Name</label>
+              <input type="text" name="fullName" placeholder="John Doe" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+            </div>
+            <div class="w-full my-2 flex items-center">
+              <label for="email" class="mr-4 w-1/3">Email</label>
+              <input type="email" name="email" placeholder="abc123@gmail.com" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+            </div>
+            <div class="w-full my-2 flex items-center">
+              <label for="phone" class="mr-4 w-1/3">Phone Number</label>
+              <input type="tel" name="phone" placeholder="(651)488-8888" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+            </div>
+            <div class="w-full my-2 flex items-center">
+              <label for="subject" class="mr-4 w-1/3">Zip Code</label>
+              <input type="text" name="zip" placeholder="#####" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+            </div>
+            <div class="w-full my-2 flex items-center">
+              <label for="subject" class="mr-4 w-1/3">Subject</label>
+              <input type="text" name="subject" placeholder="Subject" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+            </div>
+            <div class="w-full my-2 flex items-center">
+              <label for="message" class="mr-4 w-1/3">Message</label>
+              <textarea type="text" name="message" placeholder="Type here" class="w-5/6 bg-slate-100 border rounded-xl p-2">
+              </textarea>
+            </div>
+            <div class="text-center mt-8">
+              <button type="submit" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                  Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
+    <dialog id="modalGallery" class="modal">
+      <div class="modal-box w-5/6 lg:w-2/3 max-w-none">
+        <h3 class="font-bold text-center text-2xl">Gallery</h3>
+        <hr class="text-slate-700 my-4 mx-auto w-1/3">
+        <div class="mx-2 md:mx-8 grid grid-cols-2 gap-4">
+          <img src="./img/concrete.jpg" alt="Concrete Pour" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/colored.jpg" alt="Concrete Pour" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/removal.jpg" alt="Concrete Pour" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/shedPad.jpg" alt="Concrete Pour" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/additionPad.jpg" alt="Concrete Pour" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/plankfinish.jpg" alt="Wooden Plank Concrete Finish" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/driveway4before.jpg" alt="Concrete Removal" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/driveway4after.jpg" alt="Concrete Driveway" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/driveway5before.jpg" alt="Concrete Removal" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/driveway5after.jpg" alt="Concrete Driveway" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/skirt.jpg" alt="Concrete Carport" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/skirt2.jpg" alt="Concrete Driveway" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/removal1.jpg" alt="Concrete Removal" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/walkway1.jpg" alt="Concrete Walkway" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+          <img src="./img/walkway2.jpg" alt="Concrete Sidewalk" class="w-full h-32 md:h-40 lg:h-48 object-cover hover:scale-150 transition">
+        </div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
+
+    <!-- Fixed Buttons -->
+    <div class="fixed bottom-1 left-1/2 transform -translate-x-1/2">
+      <div class="w-28 h-16 rounded-xl bg-slate-700/70">
+        <div class="grid grid-cols-2 gap-2 m-2 justify-between items-center h-full">
+          <button href="tel:+13204239504" class="rounded-xl transition p-3 hover:ring-1 ring-offset-4 ring-slate-400 text-white bg-yellow-500 shadow-lg"><i class="bi bi-telephone-fill"></i></button>
+          <button onclick="modalEmail.showModal()" class="rounded-xl transition p-3 hover:ring-1 ring-offset-4 ring-slate-400 text-white bg-yellow-500 shadow-lg"><i class="bi bi-envelope-open-fill"></i></button>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="h-16 bg-slate-100 w-full">
+      <div class="flex h-full justify-between items-center mx-9">
+        <div class="w-1/3 h-full flex justify-start items-center">
+          <a href="./iceDam2.html" class="cursor-pointer hover:text-yellow-500">Ice Dams</a>
+        </div>
+        <a href="https://www.facebook.com/BuermannsOutdoorServices/" target="_blank"><i class="text-3xl text-blue-500 bi bi-facebook"></i></a>
+      </div>
+    </footer>
+
+    <!-- gtag Tracking-->
+    <script>
+      window.addEventListener('load', function() {
+        if (document.referrer.indexOf('https://buermannsoutdoorservices.com/iceDam.html') != -1 && window.location.pathname == '/send-email.php') {
+          gtag('event', 'conversion', {'send_to': 'AW-11082553241/02hLCN6N9-sYEJmvyaQp'});
+        }
+    
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(event){
+          event.addEventListener('click',function(){
+            gtag('event', 'conversion', {'send_to': 'AW-11082553241/e_WXCKWy1PkYEJmvyaQp'});
+          });
+        }); 
+      });
+    </script>
+
+  </body>
+</html>
